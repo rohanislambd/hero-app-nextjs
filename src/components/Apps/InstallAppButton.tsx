@@ -3,6 +3,7 @@
 import { AppContext } from '@/context/AppProvider';
 import { TApp } from '@/types/app.type';
 import React, { useContext } from 'react';
+import { toast } from 'react-toastify';
 
 const InstallAppButton = ({app}:{app:TApp}) => {
     const {instailledApp, setInstalledApp} = useContext(AppContext);
@@ -11,6 +12,7 @@ const InstallAppButton = ({app}:{app:TApp}) => {
     const handleInstall = () => {
         console.log("Install button trigger",app);
         setInstalledApp([...instailledApp, app])
+        toast.success(`${app.title} installed successfully`)
     }
     return (
         <div>
