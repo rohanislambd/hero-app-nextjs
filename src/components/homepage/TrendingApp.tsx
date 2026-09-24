@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AppPage = () => {
+const TrendingApp = () => {
     return (
         <div>
-            All Apps
+            const res 
         </div>
     );
 };
 
-export default AppPage;
+export default TrendingApp;
