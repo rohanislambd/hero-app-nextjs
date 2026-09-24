@@ -3,7 +3,7 @@ import bannerImg from "@/app/assets/hero.png"
 import Image from 'next/image';
 const Banner = () => {
     return (
-        <div className="space-y-[30px] pt-8 bg-gray-100 rounded-lg shadow-md text-center">
+        <div className="space-y-[30px] pt-8 rounded-lg shadow-md text-center">
       <h2 className="font-bold text-4xl">
         We Build <br /> <span className="text-purple-500">Productive</span> Apps
       </h2>
