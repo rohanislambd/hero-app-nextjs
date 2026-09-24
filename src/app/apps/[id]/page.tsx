@@ -1,3 +1,4 @@
+import InstallAppButton from "@/components/Apps/InstallAppButton";
 import { getAllApps } from "@/lib/dataFetch";
 import { TApp } from "@/types/app.type";
 import Image from "next/image";
@@ -101,7 +102,7 @@ const AppDetails = async ({ params }: TAppDetailsProps) => {
 
             {/* Install Button */}
            <div className="mt-5">
-              <button className="btn btn-success text-white  font-bold">Install</button>
+              <InstallAppButton app={app}></InstallAppButton>
            </div>
           </div>
         </div>

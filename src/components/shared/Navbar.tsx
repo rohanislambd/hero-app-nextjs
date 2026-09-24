@@ -16,7 +16,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-2 space-x-4 ">
               <li className='font-semibold hover:text-blue-500 text-black'><Link href="/">Home</Link></li>
               <li className='font-semibold hover:text-blue-500 text-black'><Link href="/apps">Apps</Link></li>
-              <li className='font-semibold hover:text-blue-500 text-black'><Link href='instaillation'>Installation</Link></li>
+              <li className='font-semibold hover:text-blue-500 text-black'><Link href='/instaillation'>Installation</Link></li>
           </ul>
           
           <button className="btn btn-success">Contribute</button>
