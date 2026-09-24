@@ -1,15 +1,9 @@
 import { TApp } from "@/types/app.type";
 import React from "react";
 import AppCard from "../shared/AppCard";
+import { getAllApps } from "@/lib/dataFetch";
 
-const getAllApps = async () => {
-  const res = await fetch(
-    "https://raw.githubusercontent.com/rohanislambd/hero-app-nextjs/refs/heads/main/public/data.json",
-  );
-  const data = await res.json();
 
-  return data;
-};
 
 const TrendingApp = async () => {
   const data = await getAllApps();
